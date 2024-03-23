@@ -9,22 +9,24 @@ import { IoMoonSharp } from "react-icons/io5";
 const Navbar = () => {
     return (
         <div className='navbar'>
-           <img src='' alt='' className='logo'/>
-           <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>Features</li>
-            <li>About</li>
-           </ul>
+            <img src='' alt='' className='logo' />
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Features</li>
+                <li>About</li>
+            </ul>
 
-           <div className='search-container'>
-            <input type='text' placeholder='Search'/>
-            <i> <BsSearch /> </i>
-           </div>
-           <div>
-            <FaSun />
-            <IoMoonSharp />
+            <div className='search-container'>
+                <input type='text' placeholder='Search' />
+                <i className='search-icon'> <BsSearch /> </i>
             </div>
+            <div className='mode-logo'>
+                <i className='moon-mode'>
+                    <IoMoonSharp />
+                </i>
+            </div>
+
         </div>
     );
 };

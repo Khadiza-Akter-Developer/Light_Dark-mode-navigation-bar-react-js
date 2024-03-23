@@ -9,4 +9,14 @@
     padding: 10px 10px;
     background-color: rgb(255, 255, 255);
     font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 5%;
+}
+.navbar .mode-logo .moon-mode
+{
+    cursor: pointer;
+    font-size: 32px;
 }
