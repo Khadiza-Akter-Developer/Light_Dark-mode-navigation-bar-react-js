@@ -1,6 +1,9 @@
 import React from 'react';
 import './Navbar.css';
 import { BsSearch } from "react-icons/bs";
+import { FaSun } from "react-icons/fa";
+import { IoMoonSharp } from "react-icons/io5";
+
 
 
 const Navbar = () => {
@@ -18,6 +21,10 @@ const Navbar = () => {
             <input type='text' placeholder='Search'/>
             <i> <BsSearch /> </i>
            </div>
+           <div>
+            <FaSun />
+            <IoMoonSharp />
+            </div>
         </div>
     );
 };
