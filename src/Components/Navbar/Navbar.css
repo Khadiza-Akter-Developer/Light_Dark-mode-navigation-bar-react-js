@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+
 }
-.navbar
-{
+
+.navbar {
     padding: 10px 10px;
     background-color: rgb(255, 255, 255);
     font-size: medium;
@@ -15,25 +16,24 @@
     width: 100%;
     padding: 10px 5%;
 }
-.navbar .mode-logo .moon-mode
-{
+
+.navbar .mode-logo .moon-mode {
     cursor: pointer;
-    font-size: 32px;
+    font-size: 30px;
 }
-.navbar .search-container .search-icon
-{
+
+.navbar .search-container .search-icon {
     cursor: pointer;
-    vertical-align: middle; 
+    vertical-align: middle;
     width: 20px;
     font-size: large;
     color: #fff;
 
 
-} 
+}
 
-.navbar .search-container
-{
-   
+.navbar .search-container {
+
     display: flex;
     align-items: center;
     background: #242424;
@@ -42,28 +42,27 @@
 }
 
 
-.navbar .search-container input
-{
+.navbar .search-container input {
     padding: 6px;
     background: transparent;
     border: 0;
     outline: 0;
-    color: #fff;
-    font-size: 18px ;
-    max-width: 200px;
+    color: #ffffff;
+    font-size: 18px;
+    max-width: 250px;
 }
-.navbar .search-container input::placeholder
-{
-    color: #fff;
+
+.navbar .search-container input::placeholder {
+    color: #cfc8c8;
 }
-.navbar ul
-{
+
+.navbar ul {
     flex: 1;
     list-style: none;
 
 }
-.navbar ul li
-{
+
+.navbar ul li {
     display: inline-block;
     margin: 10px 20px;
     font-size: 20px;
