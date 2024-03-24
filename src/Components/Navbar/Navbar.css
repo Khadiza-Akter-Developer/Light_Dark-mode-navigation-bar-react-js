@@ -23,8 +23,14 @@
 .navbar .search-container .search-icon
 {
     cursor: pointer;
-    padding-top: 15px ;
+    vertical-align: middle; 
+
 } 
+
+.navbar .search-container
+{
+    padding-right: 35%;
+}
 
 .navbar ul
 {
