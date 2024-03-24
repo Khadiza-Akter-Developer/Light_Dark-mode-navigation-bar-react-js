@@ -24,14 +24,37 @@
 {
     cursor: pointer;
     vertical-align: middle; 
+    width: 20px;
+    font-size: larger;
+    color: #fff;
 
 } 
 
 .navbar .search-container
 {
-    padding-right: 35%;
+   
+    display: flex;
+    align-items: center;
+    background: #242424;
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
+
+.navbar .search-container input
+{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px ;
+    max-width: 200px;
+}
+.navbar .search-container input::placeholder
+{
+    color: #fff;
+}
 .navbar ul
 {
     flex: 1;
