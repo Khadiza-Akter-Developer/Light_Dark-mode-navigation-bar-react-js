@@ -7,7 +7,8 @@ import { IoMoonSharp } from "react-icons/io5";
 const Navbar = ({ theme, setTheme }) => {
 
     const toggle_mode = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
+        // setTheme(theme === 'light' ? 'dark' : 'light'); {we can also write it like this}
+       
     }
 
     return (
