@@ -3,12 +3,13 @@ import './Navbar.css';
 import { BsSearch } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
 import { IoMoonSharp } from "react-icons/io5";
+import { FaRegSun } from "react-icons/fa";
 
 const Navbar = ({ theme, setTheme }) => {
 
     const toggle_mode = () => {
-        // setTheme(theme === 'light' ? 'dark' : 'light'); {we can also write it like this}
-       
+        setTheme(theme === 'light' ? 'dark' : 'light');
+        // theme == 'light' ?setTheme('dark') : setTheme('light'); {we can write it like this also}
     }
 
     return (
@@ -30,7 +31,7 @@ const Navbar = ({ theme, setTheme }) => {
             </div>
             <div className='mode-logo'>
                 <div className='moon-mode' onClick={toggle_mode}>
-                    <IoMoonSharp />
+                    {theme==='light' ?  <IoMoonSharp /> : <FaRegSun />}
                 </div>
             </div>
         </div>
