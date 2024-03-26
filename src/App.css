@@ -1,12 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
-.container
-{
-  background-color: #c6e6d5;
+
+.container {
   width: 100vw;
   min-height: 100vh;
+  transition: background-color 0.5s; 
+}
+
+.light {
+  background-color: #c6e6d5; 
+}
+
+.dark {
+  background-color: #222; 
 }
