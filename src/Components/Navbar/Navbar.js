@@ -1,14 +1,15 @@
 import React from 'react';
 import './Navbar.css';
 import { BsSearch } from "react-icons/bs";
-import { FaSun } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import { IoMoonSharp } from "react-icons/io5";
 
-const Navbar = ({theme, setTheme}) => {
+const Navbar = ({ theme, setTheme }) => {
 
-    const toggle_mode = () =>{
-        theme == 'light' ? setTheme('dark') : setTheme('light');
+    const toggle_mode = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
     }
+
     return (
         <div className='navbar'>
             <img src='' alt='' className='logo' />
@@ -21,14 +22,16 @@ const Navbar = ({theme, setTheme}) => {
 
             <div className='search-container'>
                 <input type='text' placeholder='Search' />
-                <i className='search-icon'> <BsSearch /> </i>
+                {/* Replaced <i> with <div> and used conditional rendering */}
+                <div className='search-icon'>
+                    {theme === 'light' ? <BsSearch /> : <FaSearch />}
+                </div>
             </div>
             <div className='mode-logo'>
-                <i className='moon-mode' onClick={()=>{toggle_mode()}}>
+                <div className='moon-mode' onClick={toggle_mode}>
                     <IoMoonSharp />
-                </i>
+                </div>
             </div>
-
         </div>
     );
 };
