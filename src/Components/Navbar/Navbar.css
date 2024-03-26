@@ -26,6 +26,7 @@
     font-family: serif;
     font-weight: 500;
     color: #000000;
+    transition: 0.5s;
 }
 
 .search-container {
