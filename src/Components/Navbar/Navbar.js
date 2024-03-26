@@ -25,9 +25,6 @@ const Navbar = () => {
                 <i className='moon-mode'>
                     <IoMoonSharp />
                 </i>
-                <div>
-                    
-                </div>
             </div>
 
         </div>
