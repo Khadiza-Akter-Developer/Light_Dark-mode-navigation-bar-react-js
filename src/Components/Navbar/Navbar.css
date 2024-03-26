@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff; 
-    color: #000000; 
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px 20px;
 }
 
 .logo {
-    width: 100px; 
-    height: auto; 
+    width: 100px;
+    height: auto;
 }
 
 .navbar ul {
@@ -20,7 +20,7 @@
 }
 
 .navbar ul li {
-    margin-right: 20px; 
+    margin-right: 20px;
     cursor: pointer;
     font-size: 18px;
     font-family: serif;
@@ -34,14 +34,14 @@
 
 input[type='text'] {
     padding: 8px 25px 8px 10px;
-    border-radius: 20px; 
+    border-radius: 20px;
     border: none;
     outline: none;
-    background-color: #867878; 
-    color: #fff; 
+    background-color: #867878;
+    color: #fff;
 }
 
-.navbar .search-container input::placeholder{
+.navbar .search-container input::placeholder {
     color: white;
     font-weight: 600;
 }
@@ -59,4 +59,14 @@ input[type='text'] {
 
 .moon-mode {
     font-size: 24px;
+}
+
+.light .navbar {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark .navbar {
+    background-color: #767c5f;
+    color: #ffffff;
 }
