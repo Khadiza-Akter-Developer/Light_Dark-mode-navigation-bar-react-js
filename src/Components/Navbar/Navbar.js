@@ -15,7 +15,7 @@ const Navbar = ({ theme, setTheme }) => {
     return (
         <div className='navbar'>
             <img src='' alt='' className='logo' />
-            <ul>
+            <ul className={theme === 'dark' ? 'dark-theme' : ''}>
                 <li>Home</li>
                 <li>Products</li>
                 <li>Features</li>
@@ -31,7 +31,7 @@ const Navbar = ({ theme, setTheme }) => {
             </div>
             <div className='mode-logo'>
                 <div className='moon-mode' onClick={toggle_mode}>
-                    {theme==='light' ?  <IoMoonSharp /> : <FaRegSun />}
+                    {theme === 'light' ? <IoMoonSharp /> : <FaRegSun />}
                 </div>
             </div>
         </div>

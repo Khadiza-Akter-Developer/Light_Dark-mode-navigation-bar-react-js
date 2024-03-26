@@ -67,7 +67,22 @@ input[type='text'] {
     color: #000000;
 }
 
+/* navbar ul dark mode design */
+
 .dark .navbar {
-    background-color: #767c5f;
+    background-color: #909b65;
     color: #ffffff;
+}
+
+.dark .navbar ul li {
+    color: #ffffff; /* Change text color of list */
+}
+
+.dark input[type='text'] {
+    background-color: #333333; /* Change background color of input */
+    color: #fff; /* Change text color of input */
+}
+
+.dark .navbar .search-container input::placeholder {
+    color: #ccc; /* Change placeholder color of input */
 }
