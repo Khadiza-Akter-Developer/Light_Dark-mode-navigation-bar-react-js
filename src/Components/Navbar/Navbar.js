@@ -4,9 +4,11 @@ import { BsSearch } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
 import { IoMoonSharp } from "react-icons/io5";
 
+const Navbar = ({theme, setTheme}) => {
 
-
-const Navbar = () => {
+    const toggle_mode = () =>{
+        theme == 'light' ? setTheme('dark') : setTheme('light');
+    }
     return (
         <div className='navbar'>
             <img src='' alt='' className='logo' />
@@ -22,7 +24,7 @@ const Navbar = () => {
                 <i className='search-icon'> <BsSearch /> </i>
             </div>
             <div className='mode-logo'>
-                <i className='moon-mode'>
+                <i className='moon-mode' onClick={()=>{toggle_mode()}}>
                     <IoMoonSharp />
                 </i>
             </div>
